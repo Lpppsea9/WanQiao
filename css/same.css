@@ -1,0 +1,257 @@
+/*总页面头部样式*/
+
+.header__1 {
+	height:55px;
+	background-color:#393d49;
+	display: flex;
+}
+
+header > div {
+	display: inline-block;
+}
+
+header > div >p{
+	display: inline-block;
+}
+
+.header-select{
+	width:200px;
+	height: 32px;
+	margin-top: 10px;
+	margin-left:5px ;
+}
+
+.header-select-1{
+	width:201px;
+	height: 32px;
+}
+
+.header-btn{
+	width:30px;
+	height: 30px;
+	cursor: pointer;
+	background: url(../img/button-1.png) no-repeat;
+	background-size: 30px 30px;
+	margin-left: 10px;
+	margin-top:10px ;
+}
+
+.header-title{
+	height: 30px;
+	line-height: 30px;
+	color:#ffffff;
+	font-size:28px;
+	letter-spacing: 10px;
+	margin-left: 12px;
+	margin-top: 10px;
+}
+
+.header-nav{
+	width:388px;
+	height: 30px;
+	line-height: 30px;
+	margin:auto 51px auto auto;
+	color:#999999;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-nav > div{
+	display: inline-block;
+}
+
+/* 左边下拉列表样式 */
+
+.major{
+	height: calc(100% - 60px);
+	width: 100%;
+	border-top: solid #00a65a 5px;
+	display: flex;
+}
+
+.major-left{
+	width:202px;
+	height: auto;
+	background-color: #393d49;
+	border-right:solid 2px #00a65a;
+}
+
+.major-left .major-left-header{
+	text-align: center;
+}
+
+.major-left .major-left-header .major-left-header-logo{
+	width: 76px;
+	height: 76px;
+	background: url(../img/logo-1.png) no-repeat;
+	background-size: 76px 76px;
+	margin:15px auto;
+	border: 5px solid #44576b;
+	border-radius: 50%;
+}
+
+.major-left .major-left-header div:nth-child(2){
+	color:#fff;
+	margin: 15px auto;
+	font-size: 12px;
+}
+
+.major-left .major-left-select .leftSelect1{
+	width:200px;
+	height: 45px;
+	line-height: 45px;
+	/* background-color: #00a65a; */
+	font-size: 15px;
+}
+
+.major-left .major-left-select ul > .leftSelect1:hover{
+	background-color: #4e5464;
+}
+
+.major-left .major-left-select ul > .leftSelectTitle:hover{
+	background-color: #4e5464;
+}
+
+.major-left .major-left-select ul > .leftSelectTitle::after{
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-left: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right: 15px solid #FF5954;
+	border-top: 15px solid #FF5954;
+}
+
+.major-left .major-left-select .leftSelectTitle .leftSelect-item{
+	display: none;
+}
+
+.major-left .major-left-select .leftSelectTitle .leftSelect-item ul{
+	background-color: #323642;
+}
+
+.major-left .major-left-select .leftSelectTitle{
+	width:200px;
+	/* height: 45px;  设置高度后会推不下来 */
+	line-height: 45px;
+	/* background-color: #00a65a; */
+	font-size: 15px;
+	position: relative;
+}
+
+/*倒三角*/
+.major-left .major-left-select .leftSelectTitle .triangle{
+	width: 0;
+	height: 0;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid #c4c5c9;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 10px;
+}
+
+
+.major-left-select .leftSelect1 a,.leftSelectTitle a{
+	margin-left:39px;
+	color: #c4c5c9;
+}
+
+.major-left .major-left-select .leftSelectTitle .leftSelect-item ul{
+	background-color: #323642;
+	margin-right: 2px;
+	list-style: none;
+}
+
+.major-left .major-left-select .leftSelectTitle .leftSelect-item ul li{
+	padding-left: 5px ;
+	clear: left;
+	display: block;
+}
+
+.major-left .major-left-select .leftSelectTitle .leftSelect-item ul li span{
+	width: 4px;
+	height: 4px;
+	background-color: #c4c5c9;
+	display: inline-block;
+	margin-right: 8px;
+	margin-bottom: 3px;
+}
+
+/* 右边 底部样式*/
+
+.right-footer{
+    width:100%;
+	height: 40px;
+	font-size: 12px;
+    background-color: #393d49;
+    display: flex;
+    margin-top: 10px;
+    /* justify-content: space-between; */
+}
+
+.right-footer div > div > p {
+	font-size: 12px;
+}
+
+.right-footer div{
+    height: 40px;
+    line-height: 40px;
+    color: #b5c0c2;
+}
+
+.right-footer div:nth-child(1){
+    margin-left: 15px;
+}
+
+.right-footer div:nth-child(2){
+    margin-left: 67px;
+}
+
+.right-footer div:nth-child(3){
+    margin-left: 25px;
+}
+
+.right-footer div:nth-child(4){
+    text-align: right;
+    margin-right: 15px;
+    flex: 1;
+}
+
+/* 右边 头部样式*/
+
+.major .major-right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.major .major-right .right-header{
+    height: 42px;
+    margin: 10px 10px 8px 5px;
+    margin-bottom: 5px;
+    margin-left: 8px;
+    margin-right: 10px;
+}
+
+.major .right-header .right-headerword{
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #00a65a;
+}
+
+.major .right-header .right-headerline{
+    height: 2px;
+    background-color: #00a65a;
+}
+
+
+
+

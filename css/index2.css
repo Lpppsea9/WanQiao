@@ -1,0 +1,39 @@
+.major .major-right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.major .major-right .right-header{
+    height: 42px;
+    margin: 10px 10px 8px 5px;
+    margin-bottom: 5px;
+    margin-left: 8px;
+    margin-right: 10px;
+}
+
+.major .right-header .right-headerword{
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 5px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #00a65a;
+}
+
+.major .right-header .right-headerline{
+    height: 2px;
+    background-color: #00a65a;
+}
+
+.major .right-content{
+    height: calc(100% - 107px);  /*42 + 10 + 5*/
+    margin:0 10px 0 8px;
+    border: 1px #227446 solid;
+}
+
+
+
