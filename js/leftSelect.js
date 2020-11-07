@@ -4,15 +4,15 @@ var leftSelect = document.getElementsByClassName("leftSelectTitle"); //leftSelec
 // console.log(leftSelect[1]); //<li>实时监测<li>对象
 for (let i = 0; i < leftSelect.length; i++) {
   let aline = leftSelect[i].children[0];
-  let leftSelect_item = leftSelect[i].children[2].children[0]; //二级ul
+  let leftSelect_item = leftSelect[i].children[1].children[0]; //二级ul
   let leftSelect_item_li = leftSelect_item.children;  //二级菜单li元素
 
   // console.log(leftSelect_item);
   // console.log(aline);
   aline.addEventListener("click", function () {
     
-    if(this.parentNode.children[2].style.display == "" || this.parentNode.children[2].style.display == "none"){
-      this.parentNode.children[2].style.display = "block";
+    if(this.parentNode.children[1].style.display == "" || this.parentNode.children[1].style.display == "none"){
+      this.parentNode.children[1].style.display = "block";
       this.style.color = "#fff"
     }else{
       this.parentNode.children[1].style.display = "none";

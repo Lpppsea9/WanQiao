@@ -140,6 +140,13 @@ header > div >p{
 }
 
 /*倒三角*/
+.major-left .major-left-select .leftSelectTitle > a{
+	position: relative;
+	width: calc(100% - 39px);
+	display: block;
+}
+
+
 .major-left .major-left-select .leftSelectTitle .triangle{
 	width: 0;
 	height: 0;
@@ -251,6 +258,7 @@ header > div >p{
     height: 2px;
     background-color: #00a65a;
 }
+
 
 
 
