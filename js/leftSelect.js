@@ -1,15 +1,11 @@
-var leftSelect = document.getElementsByClassName("leftSelectTitle"); //leftSelect下面的一级菜单
-// var leftSelect_item = leftSelect[]
-// console.log(leftSelect_item);
-// console.log(leftSelect[1]); //<li>实时监测<li>对象
-for (let i = 0; i < leftSelect.length; i++) {
-  let aline = leftSelect[i].children[0];
-  let leftSelect_item = leftSelect[i].children[1].children[0]; //二级ul
-  let leftSelect_item_li = leftSelect_item.children;  //二级菜单li元素
-
+//leftSelect下面的一级菜单 实时监测系列
+let li1 = document.getElementsByClassName("leftSelectTitle"); 
+for(let i = 0; i < li1.length; i++) {
+  let atag = li1[i].children[0];  //a标签
+  let ul2 = li1[i].children[1].children[0]; //二级ul
   // console.log(leftSelect_item);
   // console.log(aline);
-  aline.addEventListener("click", function () {
+  atag.addEventListener("click", function () {
     
     if(this.parentNode.children[1].style.display == "" || this.parentNode.children[1].style.display == "none"){
       this.parentNode.children[1].style.display = "block";
@@ -19,16 +15,17 @@ for (let i = 0; i < leftSelect.length; i++) {
       this.style.color = "#c4c5c9"
     }
   })
-  // console.log(leftSelect_item_li.length); //二级菜单的长度
-  for(let j = 0; j < leftSelect_item_li.length; j++) {
-    leftSelect_item_li[j].addEventListener("click",function () {
-      for(let k = 0; k < leftSelect_item_li.length; k++) {
-        leftSelect_item_li[k].style.background='#323642';
-      }
-      this.style.background='#00a75a';
+  
+//循环二级ul，给每个li添加点击事件
+  const li2len = ul2.getElementsByTagName("li").length; //二级ul里的li标签个数
+  console.log(li2len);
+  for (let j = 0; j < li2len; j++) {
+    ul2.children[j].addEventListener("click",function () {
+      this.style.backgroundColor = "red"
     })
   }
 }
 
-
+// let ul2 = document.getElementById("ul2")
+// console.log(ul2);
 
