@@ -10,7 +10,7 @@ for(let i = 0; i < li1.length; i++) {
     if (this.parentNode.children[1].style.display == "" || this.parentNode.children[1].style.display == "none"){
       this.parentNode.children[1].style.display = "block";
       this.style.color = "#fff"
-      ul2.style.backgroundColor = "black"
+      // ul2.style.backgroundColor = "black"
     } else {
       this.parentNode.children[1].style.display = "none";
       this.style.color = "#c4c5c9";
