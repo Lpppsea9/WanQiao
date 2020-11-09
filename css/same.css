@@ -126,11 +126,15 @@ header > div >p{
 	display: none;
 }
 
+.major-left .major-left-select .leftSelect1 {
+	background-color:#393d49 ;
+}
+
 .major-left .major-left-select .leftSelectTitle .leftSelect-item ul{
 	background-color: #323642;
 }
 
-.major-left .major-left-select .leftSelectTitle{
+.major-left .major-left-select .leftSelectTitle, .leftSelect1{
 	width:200px;
 	/* height: 45px;  设置高度后会推不下来 */
 	line-height: 45px;
@@ -159,6 +163,9 @@ header > div >p{
 	right: 10px;
 }
 
+.major-left .major-left-select .leftSelectTitle .triangle_rotate{
+	transform: rotate(180deg);
+}
 
 .major-left-select .leftSelect1 a,.leftSelectTitle a{
 	margin-left:39px;
