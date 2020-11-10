@@ -35,5 +35,17 @@
     border: 1px #227446 solid;
 }
 
+.major .right-content .right-content-header{
+    height: 39px;
+    width: 100%;
+    line-height: 39px;
+    background-color: #00a75a;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+
 
 
